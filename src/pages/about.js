@@ -47,7 +47,7 @@ const About = () => {
         backImage={"/assets/banner2.jpg"}
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 p-10 mx-auto"> 
+      <div className="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-10 mx-auto"> 
         {services.map((service, index) => (
           <Card 
           key={index}
