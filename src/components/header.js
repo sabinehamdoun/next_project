@@ -6,13 +6,13 @@ const Header = () => {
   
   return (
     <nav>
-      <div className="menu">
-        <div className="container">
+      <div className="w-full bg-[#f0f0f0]">
+        <div className="flex max-w-screen-xl mx-auto">
         <div>
-          <a href="#home"><img src={"/assets/logo-bg.png"} alt="logo" height="80" /></a>
+          <a href="#home"><img src={"/assets/logo-bg.png"} alt="logo" className="h-20"/></a>
         </div>
-        <div className="navlist">
-          <ul id="list">
+        <div className="flex justify-end items-center ml-auto">
+          <ul id="list" className='list-none flex gap-4 sm:gap-12 uppercase pr-9 sm:pr-14'>
             <li><Link href="/home">Home</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/contact">Contact</Link></li>

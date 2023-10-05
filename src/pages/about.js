@@ -44,10 +44,10 @@ const About = () => {
       <Banner
         title={"About Us"}
         subtitle={"Get to Know Us More!"}
-        backImage={"/assets/banner.jpg"}
+        backImage={"/assets/banner2.jpg"}
       />
 
-      <div className="card-grid" style={{margin: "0 auto"}}> 
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 p-10 mx-auto"> 
         {services.map((service, index) => (
           <Card 
           key={index}
