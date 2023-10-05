@@ -22,7 +22,7 @@ const Form = () => {
         /><br />
         <input type="text" id="email" name="email" placeholder="Email" className="w-3/5 border border-solid border-gray-300 rounded-md mb-6 p-4 text-base"/>
         <div>
-          <button type="submit" className="bg-gray-900 border border-gray-900 text-white px-3 py-2 rounded-md mb-6">Submit</button>
+          <button type="submit" className="bg-gray-900 hover:bg-gray-700 hover:border-gray-700 border border-gray-900 text-white px-3 py-2 rounded-md mb-6">Submit</button>
         </div>
       </form>
     </div>
