@@ -5,13 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/effect-fade";
-import "swiper/css/effect-coverflow";
+import "swiper/css/effect-fade"; 
 import "swiper/css/pagination";
 
 import { Navigation, EffectFade, Pagination, Autoplay } from "swiper/modules";
 
-const Slider = () => { 
+const Slider = () => {  
 
   return (
     <div>  
@@ -36,15 +35,27 @@ const Slider = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/banner.jpg" />
+        <Banner
+            title={"Welcome to Our Company"}
+            subtitle={"Join Our Journey"}
+            backImage={"/assets/banner.jpg"}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/banner3.png" />
+        <Banner
+            title={"Discover Our Services"}
+            subtitle={"Discover Excellence"}
+            backImage={"/assets/banner3.png"}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/banner4.jpg" />
-        </SwiperSlide>
-      </Swiper> 
+        <Banner
+            title={"Meet Our Team"}
+            subtitle={"Experience Quality"}
+            backImage={"/assets/banner4.jpg"}
+          />
+        </SwiperSlide> 
+      </Swiper>  
     </div>
   );
 };

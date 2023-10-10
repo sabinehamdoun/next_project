@@ -21,7 +21,7 @@ h2 {
 
 .swiper {
   width: 100%;
-  height: 50vh;
+  height: auto;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -38,7 +38,27 @@ h2 {
   width: 100%;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #dce1e2;
+  border-radius: 30px;
+  padding: 30px 30px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: black;
+}
+
+.swiper-pagination-bullet {
+  color: #1c2123;
+}
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   color: #1c2123;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
 }
