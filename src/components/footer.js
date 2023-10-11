@@ -13,7 +13,7 @@ const Footer = () => {
           laboriosam?
         </p>
         <hr style={{backgroundColor: "#1c2123", borderColor: "#1c2123", margin: "20px 0"}} />
-        <div className="flex gap-5 justify-center mt-10">
+        <div className="flex gap-5 justify-center mt-8">
           <img
             src="/assets/twitter-svgrepo-com.svg"
             alt="twitter"
