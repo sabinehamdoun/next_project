@@ -9,7 +9,7 @@ function AccordionItem({ title, content, index }) {
     setIsOpen(!isOpen);
   };
 
-  const backgroundColor = index % 2 === 0 ? "bg-[#f0f0f0]" : "bg-[#f0f0f031]";
+  const backgroundColor = index % 2 === 0 ? "bg-[#fff]" : "bg-[#ffffff6b]";
 
   return (
     <div className={`${backgroundColor} px-4 py-4 rounded-md`}>

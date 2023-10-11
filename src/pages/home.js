@@ -1,6 +1,6 @@
 import AccordionItem from "@component/components/accordion";
-import DefaultAccordion from "@component/components/accordion";
 import Banner from "@component/components/banner";
+import FilterCard from "@component/components/filter-card";
 import Footer from "@component/components/footer";
 import Form from "@component/components/form";
 import Header from "@component/components/header";
@@ -36,10 +36,10 @@ const HomePage = () => {
         backImage={"/assets/banner2.jpg"}
       />
       <Services />
-      <div className="bg-[#f0f0f0] pt-4">
+      <div className="bg-[#fff] pt-4">
         <Form />
       </div>
-      <div className="p-14">
+      <div className="p-14 bg-[#f0f0f0]">
         <h2 className="text-2xl text-center mb-3">
           Frequently Asked Questions
         </h2>
@@ -54,6 +54,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+      <FilterCard />
       <Footer />
     </>
   );
