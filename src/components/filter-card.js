@@ -44,7 +44,7 @@ const FilterCard = () => {
 
   return (
     <div className="bg-[#fff] py-8">
-      <div className="max-w-screen-lg mx-auto">
+      <div className="flex justify-end w-[71%] mx-auto max-w-screen-xl">
         <Dropdown />
       </div>
       <div className="w-3/4 max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 p-6 mx-auto">

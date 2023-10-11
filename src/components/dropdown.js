@@ -12,7 +12,7 @@ function Dropdown() {
   };
 
   return (
-    <div className="relative w-full ">
+    <div className="">
       <div className="relative">
         <div
           className="w-64 p-2.5 text-[#1c212399] bg-white border border-[#c8cdcf99] rounded-md shadow-sm outline-none focus:border-[#1c2123]"
