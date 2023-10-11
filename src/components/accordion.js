@@ -1,30 +1,71 @@
-import React from "react";
-import { CAccordion, CAccordionItem, CAccordionHeader, CAccordionBody } from '@coreui/react';
+import React, { useState } from "react";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
+import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineMinus } from "react-icons/ai";
 
 function DefaultAccordion() {
+  const [open, setOpen] = useState(1);
+
+  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+
   return (
-    // <div className="w-[100%] max-w-screen-md py-1 sm:p-4 mx-auto">
-      <CAccordion>
-        <CAccordionItem>
-          <CAccordionHeader>Header #1</CAccordionHeader>
-          <CAccordionBody>
-            Content #1
-          </CAccordionBody>
-        </CAccordionItem>
-        <CAccordionItem>
-          <CAccordionHeader>Header #2</CAccordionHeader>
-          <CAccordionBody>
-            Content #2
-          </CAccordionBody>
-        </CAccordionItem>
-        <CAccordionItem>
-          <CAccordionHeader>Header #3</CAccordionHeader>
-          <CAccordionBody>
-            Content #3
-          </CAccordionBody>
-        </CAccordionItem>
-      </CAccordion>
-    // </div>
+    <div className="w-[100%] max-w-screen-md py-1 sm:p-4 mx-auto">
+      <Accordion open={open === 1} className="bg-[#f0f0f0] px-3 py-1 rounded-md">
+        <AccordionHeader onClick={() => handleOpen(1)} className="text-lg">
+          How can I learn a new programming language?
+          {open === 1 ? (
+            <AiOutlineMinus className="ml-auto" />
+          ) : (
+            <AiOutlinePlus className="ml-auto" />
+          )}
+        </AccordionHeader>
+        <AccordionBody className={`py-3 ${open === 1 ? "block" : "hidden"}`}>
+          Learning a new programming language involves studying its syntax,
+          practicing coding, and working on projects to apply your knowledge.
+          Online resources and courses can be helpful.
+        </AccordionBody>
+      </Accordion>
+
+      <Accordion open={open === 2} className="bg-[#f0f0f031] px-3 py-1 rounded-md">
+        <AccordionHeader onClick={() => handleOpen(2)} className="text-lg">
+          What is version control and why is it important for software
+          development?
+          {open === 2 ? (
+            <AiOutlineMinus className="ml-auto" />
+          ) : (
+            <AiOutlinePlus className="ml-auto" />
+          )}
+        </AccordionHeader>
+        <AccordionBody className={`py-3 ${open === 2 ? "block" : "hidden"}`}>
+          Version control is a system that tracks changes to a codebase over
+          time. It is important for software development because it allows
+          multiple developers to collaborate, revert to previous versions, and
+          maintain a history of code changes, ensuring code stability and
+          accountability.
+        </AccordionBody>
+      </Accordion>
+
+      <Accordion open={open === 3} className="bg-[#f0f0f0] px-3 py-1 rounded-md">
+        <AccordionHeader onClick={() => handleOpen(3)} className="text-lg">
+          What is object-oriented programming (OOP)?
+          {open === 3 ? (
+            <AiOutlineMinus className="ml-auto" />
+          ) : (
+            <AiOutlinePlus className="ml-auto" />
+          )}
+        </AccordionHeader>
+        <AccordionBody className={`py-3 ${open === 3 ? "block" : "hidden"}`}>
+          Object-oriented programming is a programming paradigm that uses
+          objects, which are instances of classes, to represent and manipulate
+          data. It focuses on concepts like encapsulation, inheritance, and
+          polymorphism for building modular and maintainable code.
+        </AccordionBody>
+      </Accordion>
+    </div>
   );
 }
 
