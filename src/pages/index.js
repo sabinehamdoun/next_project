@@ -1,5 +1,6 @@
 import HomePage from "./home";
-// import './src/styles/globals.css'
+import '@coreui/coreui/dist/css/coreui.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Home() {
   return (
