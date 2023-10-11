@@ -19,10 +19,10 @@ const HomePage = () => {
       <div className="bg-[#f0f0f0] pt-4">
         <Form />
       </div>
-      <div className="p-14">
+      {/* <div className="p-14">
         <h2 className="text-2xl text-center mb-3">Frequently Asked Questions</h2>
         <DefaultAccordion />
-      </div>
+      </div> */}
       <Footer />
     </>
   );
