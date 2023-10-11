@@ -1,34 +1,34 @@
-// import React, { useState } from "react";
-// import {
-//   Accordion,
-//   AccordionHeader,
-//   AccordionBody,
-// } from "@material-tailwind/react";
-// import { AiOutlinePlus } from "react-icons/ai";
-// import { AiOutlineMinus } from "react-icons/ai";
+import React, { useState } from "react";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
+import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineMinus } from "react-icons/ai";
 
-// function DefaultAccordion() {
-//   const [open, setOpen] = useState(1);
+function DefaultAccordion() {
+  const [open, setOpen] = useState(1);
 
-//   const handleOpen = (value) => setOpen(open === value ? 0 : value);
+  const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
-//   return (
+  return (
 //     <div className="w-[100%] max-w-screen-md py-1 sm:p-4 mx-auto">
-//       <Accordion open={open === 1} className="bg-[#f0f0f0] px-3 py-1 rounded-md">
-//         <AccordionHeader onClick={() => handleOpen(1)} className="text-lg">
-//           How can I learn a new programming language?
-//           {open === 1 ? (
-//             <AiOutlineMinus className="ml-auto" />
-//           ) : (
-//             <AiOutlinePlus className="ml-auto" />
-//           )}
-//         </AccordionHeader>
-//         <AccordionBody className={`py-3 ${open === 1 ? "block" : "hidden"}`}>
-//           Learning a new programming language involves studying its syntax,
-//           practicing coding, and working on projects to apply your knowledge.
-//           Online resources and courses can be helpful.
-//         </AccordionBody>
-//       </Accordion>
+      <Accordion open={open === 1} className="bg-[#f0f0f0] px-3 py-1 rounded-md">
+        <AccordionHeader onClick={() => handleOpen(1)} className="text-lg">
+          How can I learn a new programming language?
+          {open === 1 ? (
+            <AiOutlineMinus className="ml-auto" />
+          ) : (
+            <AiOutlinePlus className="ml-auto" />
+          )}
+        </AccordionHeader>
+        <AccordionBody className={`py-3 ${open === 1 ? "block" : "hidden"}`}>
+          Learning a new programming language involves studying its syntax,
+          practicing coding, and working on projects to apply your knowledge.
+          Online resources and courses can be helpful.
+        </AccordionBody>
+      </Accordion>
 
 //       <Accordion open={open === 2} className="bg-[#f0f0f031] px-3 py-1 rounded-md">
 //         <AccordionHeader onClick={() => handleOpen(2)} className="text-lg">
@@ -66,7 +66,7 @@
 //         </AccordionBody>
 //       </Accordion>
 //     </div>
-//   );
-// }
+  );
+}
 
-// export default DefaultAccordion;
+export default DefaultAccordion;
