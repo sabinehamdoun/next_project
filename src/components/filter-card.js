@@ -64,9 +64,9 @@ const FilterCard = () => {
   const options = ["All", ...duplicateTitle];
   
   return (
-    <div className="bg-[#fff] py-10 px-36">
+    <div className="bg-[#fff] py-10 px-8 md:px-36">
       <div className="mx-auto max-w-screen-xl">
-        <div className="flex justify-end mx-auto mb-5">
+        <div className="flex justify-center md:justify-end mx-auto mb-5">
         <Dropdown options={options} selectedOption={selectedOption} onSelect={filterCards} />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 mx-auto">
