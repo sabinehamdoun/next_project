@@ -43,7 +43,7 @@ const HomePage = () => {
         <h2 className="text-2xl text-center mb-3">
           Frequently Asked Questions
         </h2>
-        <div className="w-[100%] max-w-screen-md py-1 sm:p-4 mx-auto">
+        <div className="max-w-screen-md py-1 sm:p-4 mx-auto">
           {accordionItems.map((item, index) => (
             <AccordionItem
               key={index}

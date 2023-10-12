@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <nav>
-      <div className="w-full bg-[#f0f0f0]">
+      <div className="bg-[#f0f0f0]">
         <div className="flex max-w-screen-xl mx-auto">
           <div>
             <a href="/home">
