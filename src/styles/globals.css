@@ -64,6 +64,18 @@ h2 {
 }
 
 .swiper-pagination-bullet {
-    background-color: #dce1e2 !important;
-    border: 2px solid #5c5e5f !important;
+  background-color: #dce1e2 !important;
+  border: 2px solid #5c5e5f !important;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 20px 20px;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px !important;
+  }
 }

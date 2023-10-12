@@ -39,7 +39,7 @@ const HomePage = () => {
       <div className="bg-[#fff] pt-4">
         <Form />
       </div>
-      <div className="p-14 bg-[#f0f0f0]">
+      <div className="p-7 sm:p-14 bg-[#f0f0f0]">
         <h2 className="text-2xl text-center mb-3">
           Frequently Asked Questions
         </h2>
